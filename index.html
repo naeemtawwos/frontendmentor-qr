@@ -15,20 +15,35 @@
     body{
       background-color: #D5E1EF;
       font-family: Arial, Helvetica, sans-serif;
+      
     }
     main{
       background-color: #ffffff;
       margin: auto;
       max-width: 20%;
       /*position: absolute;*/
-      margin: 0;
+      margin: 0 auto;
       margin-top: 20%;
       transform: translateY(-30%);
       border: 0 1 #ffffff; 
       border-radius: 20px;
       text-align: center;
-      padding: 20px;
+      padding: 10px;
+      display: flex;
+      /*position: absolute;
+      top: 50%;
+      height: 100px;
+       margin-top: -50px;*/
 
+    }
+    card{
+      justify-content: center;
+      align-items: center;
+    }
+
+    h2{
+      font-size: 1.3rem;
+      filter: blur(0.7px);
     }
     
     .card img{
@@ -36,13 +51,28 @@
       margin: 2px 2px 2px 2px;
       border-radius: 20px;
     }
+
+    .card p{
+      color: #898D98;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      /*font-weight: bold;*/
+    }
+
+    @media screen and (max-width: 620px) {
+      main{
+        max-width: 80%;
+        max-height: 80%;
+      }
+    }
+
+
   </style>
 </head>
 <body>  
   <main>
     <section class="card">
       <img src="images/image-qr-code.png" alt="QR Code for Frontend Mentor">
-      <h3>Improve your front-end skills by building projects</h3>
+      <h2>Improve your front-end skills by building projects</h2>
       <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
     </section>
   </main>
